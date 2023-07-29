@@ -1,0 +1,27 @@
+Open Ports:
+    Open using public IP:  44.202.31.204:80
+        Have to use the below while sarting up
+
+            #! /bin/bash
+            yum install httpd -y
+            service httpd start
+            chkconfig httpd on
+            echo "<h1> User data example </h1>" > /var/www/html/index.html
+    For amazon/ red hat:
+        User :
+            ec2-user 
+    For ubuntu:
+        User :
+            ubuntu
+        Amazon Linux, CentOS, RHEL: ec2-user
+
+        Ubuntu: ubuntu
+
+        Debian: admin
+
+        Fedora: fedora
+
+        SUSE: ec2-user
+
+        MAC:  administrator or admin 
+        Windows: Administrator
